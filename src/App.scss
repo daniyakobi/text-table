@@ -1,0 +1,20 @@
+@import './style/vars';
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.block {
+  & h2 {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $grey;
+  }
+  &__buttons {
+    margin-bottom: 15px;
+  }
+}

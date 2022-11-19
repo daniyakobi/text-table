@@ -1,0 +1,35 @@
+@import '../../style/vars';
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: fit-content;
+  padding: 15px 20px 60px;
+  background-color: $white;
+  box-shadow: 0 0 2px 1px $grey;
+  z-index: 10;
+  & h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $grey;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__close {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 300;
+    text-decoration: underline;
+    color: $grey;
+    &:hover {
+      color: $red;
+    }
+  }
+}

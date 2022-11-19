@@ -1,0 +1,19 @@
+@import '../../style/vars';
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  & button {
+    padding: 10px 25px;
+    background-color: $blue;
+    color: $white;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:disabled {
+      background-color: $disabled;
+      cursor: initial;
+    }
+  }
+}
